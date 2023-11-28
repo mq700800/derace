@@ -1,0 +1,252 @@
+.flex-display {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.nav-logo {
+  width: 20%;
+}
+.nav-navigation {
+  width: 38%;
+}
+.nav-logo img {
+  width: 38%;
+  padding-left: 34px;
+}
+.nav-links {
+  display: flex;
+  justify-content: right;
+  width: 91%;
+}
+.list {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-around;
+}
+.list li a {
+  text-decoration: none;
+  color: #78726a;
+  margin-left: 20px;
+}
+.hover-dark li a:hover {
+  color: white;
+}
+.hover-light li a:hover {
+  color: black;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  width: 32%;
+}
+.btn-group-bttn1 {
+  width: 45%;
+}
+.btn-group-bttn2 {
+  width: 35%;
+}
+
+.btn-group button {
+  margin: 0px 12px;
+}
+
+.bttn {
+  height: 50px;
+  border-radius: 26px;
+  background-color: #fd115c;
+  color: white;
+  border: 2px solid #fd115c;
+  border-top: 2px solid #fa6f9b;
+  border-left: 1px solid #fa6f9b;
+  border-right: 1px solid #fa6f9b;
+}
+.btn-group button:hover {
+  background-color: #c1134a;
+  border: 2px solid #c1134a;
+  border-top: 2px solid #fa6f9b;
+  border-left: 0.8px solid #fa6f9b;
+  border-right: 0.8px solid #fa6f9b;
+  cursor: pointer;
+}
+
+.bttnMode {
+  display: flex;
+  justify-content: right;
+  width: 10%;
+}
+.bttnMode:hover {
+  cursor: pointer;
+}
+.bttnMode-inner {
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  width: 33%;
+  padding: 3px 2px;
+}
+.bttnMode-night-day {
+  margin: 0px 3px;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 3px 3px 0px 3px;
+  background-color: white;
+  margin: 0px;
+  color: black;
+}
+.bttnMode-night-day-bttn2 {
+  padding: 3px 3px 0px 4px;
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.bttnMode-inner button:focus {
+  outline: none;
+}
+.bttnMode-inner button:hover {
+  outline: none;
+}
+.toggle-menu-button {
+  display: none;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .flex-display {
+    height: 150px;
+    width: 100%;
+  }
+  .nav-logo {
+    width: 40%;
+  }
+  .toggle-menu-button {
+    display: flex;
+    justify-content: right;
+    padding-right: 60px;
+    width: 30%;
+  }
+  .nav-navigation {
+    display: none;
+  }
+  .bttnMode {
+    display: none;
+  }
+  .btn-group-bttn2 {
+    display: none;
+  }
+  .btn-group-bttn1 {
+    width: 100%;
+  }
+  .toggle-menu {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    top: 130px;
+    height: 550px;
+  }
+  .nav-links-toggle {
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+  }
+  .list {
+    flex-direction: column;
+  }
+  .list li a {
+    margin-left: 0px;
+  }
+  ul li {
+    margin-top: 20px;
+  }
+  .bttnMode-toggle {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+  }
+  .bttnMode-night-day {
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .flex-display {
+    height: 100px;
+  }
+  .nav-logo {
+    width: 22%;
+  }
+  .nav-logo img {
+    width: 90%;
+    padding-left: 20px;
+  }
+  .nav-navigation {
+    display: none;
+  }
+  .bttnMode {
+    display: none;
+  }
+  .btn-group-bttn1 {
+    width: 70%;
+    font-size: 12px;
+  }
+  .btn-group-bttn2 {
+    display: none;
+  }
+  .toggle-menu-button {
+    display: block;
+    width: 22%;
+  }
+  .btn-group {
+    width: 60%;
+  }
+
+  .toggle-menu {
+    position: absolute;
+    width: 100%;
+    z-index: 3;
+    top: 90px;
+    padding-right: 5px;
+    height: 400px;
+    border-radius: 10px;
+  }
+  .nav-links-toggle {
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .list {
+    flex-direction: column;
+    text-align: center;
+  }
+  .list li a {
+    margin-left: 10px;
+    font-size: 14px;
+  }
+  ul li {
+    margin-top: 16px;
+  }
+  .toggle-menu-button {
+    width: 30%;
+    text-align: center;
+  }
+  .bttnMode-toggle {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    margin-left: 14px;
+    margin-top: -60px;
+  }
+  .bttnMode-night-day {
+    border-radius: 50%;
+  }
+}

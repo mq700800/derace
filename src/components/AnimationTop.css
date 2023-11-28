@@ -1,0 +1,116 @@
+.top-screen {
+  width: 90%;
+  height: 74vh;
+  background-color: rgba(0, 0, 0, 0);
+  border-radius: 30px;
+  position: absolute;
+  z-index: 1;
+  top: 180px;
+  left: 62px;
+}
+.top-screen-mini {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0px auto;
+  flex-direction: column;
+  height: 100%;
+}
+
+.top-screen-mini-heading {
+  margin: 10px 0px -30px 0px;
+}
+.top-screen-main-heading {
+  font-size: 150px;
+}
+.bttn-explore {
+  height: 50px;
+  border-radius: 26px;
+  background-color: #fd115c;
+  color: white;
+  border: 2px solid #fd115c;
+  border-top: 2px solid #fa6f9b;
+  border-left: 1px solid #fa6f9b;
+  border-right: 1px solid #fa6f9b;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .top-screen {
+    width: 91.5%;
+    height: 80vh;
+    border-radius: 10px;
+    top: 150px;
+    left: 34px;
+  }
+  .top-screen-mini {
+    width: 84%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px auto;
+    flex-direction: column;
+    height: 100%;
+  }
+  .bttn-explore {
+    height: 40px;
+    border-radius: 26px;
+    background-color: #fd115c;
+    color: white;
+    border: 2px solid #fd115c;
+    border-top: 2px solid #fa6f9b;
+    border-left: 1px solid #fa6f9b;
+    border-right: 1px solid #fa6f9b;
+    width: 100%;
+    margin-top: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  .top-screen-mini-heading {
+    margin: 10px 0px -280px 0px;
+    font-size: 26px;
+  }
+  .top-screen-main-heading {
+    font-size: 180px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .top-screen {
+    width: 95%;
+    height: 68vh;
+    border-radius: 10px;
+    top: 105px;
+    left: 10px;
+  }
+  .top-screen-mini {
+    width: 70%;
+  }
+  .bttn-explore {
+    height: 45px;
+    border-radius: 26px;
+    background-color: #fd115c;
+    color: white;
+    border: 2px solid #fd115c;
+    border-top: 2px solid #fa6f9b;
+    border-left: 1px solid #fa6f9b;
+    border-right: 1px solid #fa6f9b;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  .top-screen-mini-heading {
+    margin-bottom: -120px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  .top-screen-main-heading {
+    font-size: 80px;
+    margin-bottom: -180px;
+  }
+}

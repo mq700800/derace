@@ -1,0 +1,130 @@
+.cross {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 10px 0px 10px 150px;
+  cursor: pointer;
+}
+.wallets {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100vh;
+  padding-top: 50px;
+  position: absolute;
+  top: 0px;
+  z-index: 4;
+}
+.wallets-inner {
+  width: 34%;
+  margin: 0px auto;
+  border-radius: 20px;
+  padding-bottom: 30px;
+}
+.wallet-div {
+  width: 90%;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.wallet-card {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  padding: 30px;
+  margin-top: 30px;
+  height: 100px;
+}
+.wallet-card-heading {
+  font-size: 13px;
+}
+.wallet-card-heading2 {
+  font-size: 13px;
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.wallet-card-subheading {
+  font-size: 11px;
+}
+.wallet-card img {
+  width: 70%;
+}
+.wallet-card:hover img {
+  width: 90%;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .wallets-inner {
+    width: 100%;
+    padding-top: 50px;
+  }
+  .wallets {
+    top: -50px;
+  }
+  .cross {
+    display: block;
+    width: 100%;
+    padding: 0px 0px 30px 355px;
+    cursor: pointer;
+    margin-top: -30px;
+  }
+  .wallet-div {
+    width: 100%;
+    display: block;
+  }
+  .wallet-card {
+    width: 86%;
+    margin: 0px auto;
+    border-radius: 25px;
+    padding: 25px;
+    margin-top: 25px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .wallet-card img {
+    width: 10%;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .wallets-inner {
+    width: 100%;
+    padding-top: 50px;
+    padding-right: 5px;
+  }
+  .wallets {
+    top: -50px;
+  }
+  .cross {
+    display: block;
+    width: 100%;
+    padding: 0px 0px 30px 170px;
+    cursor: pointer;
+    margin-top: -30px;
+  }
+  .wallet-div {
+    width: 90%;
+    display: block;
+  }
+  .wallet-card {
+    width: 80%;
+    margin: 0px auto;
+    border-radius: 20px;
+    padding: 25px;
+    margin-top: 25px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .wallet-card img {
+    width: 30%;
+    margin-bottom: 10px;
+  }
+}
